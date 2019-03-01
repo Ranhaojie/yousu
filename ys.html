@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>优设网</title>
+	<meta charset="utf-8">
+    <style>
+    	.mother{
+			position: fixed;
+			height: 70px;
+			width: 500px;
+			background-color: white;
+			cursor: pointer;
+			top: 0px;
+			left: 0px;
+		}
+		.child1{
+			width: 200px;
+			height: 70px;
+			background-color: orange;
+			cursor: pointer;
+			position: fixed;
+			left: 50px;
+			text-align: center;
+		}
+		.child2{
+			font-size: 15px;
+			color: orange;
+			cursor: pointer;
+			position: fixed;
+			left: 300px;
+			top: 30px;
+		}
+		.child3{
+			width: 50px;
+			height: 5px;
+			background-color: orange;
+			cursor: pointer;
+			position: fixed;
+			left: 290px;
+			top: 60px;
+		}
+		.child4{
+			position: fixed;
+			left: 380px;
+			cursor: pointer;
+			top: 30px;
+		}
+		.child5{
+			position: fixed;
+			cursor: pointer;
+			left: 450px;
+			top: 18px;
+			font-size: 15px;
+
+		}
+	    .child5a{
+	    	position: fixed;
+	    	left: 430px;
+            width: 100px;
+            display: none;
+            top: 70px;
+            text-align: center;
+        }
+        .child5b{
+           border: solid grey 1px;
+            padding: 5px;
+        }
+        .child5c:hover dl{
+           display: block;
+           background-color: white;
+       }
+        a{
+            text-decoration: none;
+            padding: 5px;
+        }
+        .child6{
+        	position: fixed;
+        	left: 545px;
+        	top: 30px;
+        }
+        .child7{
+        	position: fixed;
+        	left: 650px;
+        	top: 18px;
+        	font-size: 15px;
+        }
+        .child7a{
+        	position: fixed;
+	    	left: 630px;
+            width: 100px;
+            display: none;
+            top: 70px;
+            text-align: center;
+        }
+        .child7b{
+        	border: solid grey 1px;
+        	padding: 5px;
+        }
+        .child8{
+        	position: fixed;
+        	left: 750px;
+        	top: 18px;
+        	font-size: 15px;
+        	color: orange;
+        }
+        .child8a{
+        	position: fixed;
+        	left: 735px;
+        	width: 100px;
+        	display: none;
+        	top: 70px;
+        	text-align: center;
+        }
+        .child8b{
+        	border: solid grey 1px;
+        	padding: 5px;
+        }
+        .child9{
+        	position: fixed;
+        	left: 850px;
+        	top: 18px;
+        	font-size: 15px;
+        }
+        .child9a{
+        	position: fixed;
+        	left: 840px;
+        	width: 100px;
+        	display: none;
+        	top: 70px;
+        	text-align: center;
+        }
+        .child9b{
+        	border: solid grey 1px;
+        	padding: 5px;
+        }
+        .child10{
+        	position: fixed;
+        	left: 970px;
+        	top: 30px;
+        	font-size: 15px;
+        }
+        .child11{
+        	position: fixed;
+        	left: 1060px;
+        	top: 18px;
+        	font-size: 15px;
+        }
+        .child11a{
+        	position: fixed;
+        	left: 1040px;
+        	width: 100px;
+        	display: none;
+        	top: 70px;
+        	text-align: center;
+        }
+        .child11b{
+        	border: solid grey 1px;
+        	padding: 5px;
+        }
+        #pic{
+        position: relative;
+        width: 610px;
+        height: 370px;
+        margin-left:-60px;
+        border: 0;
+        float: left;
+        left: 90px;
+        top: 150px;
+        overflow: hidden;
+        } 
+		#pic:after{
+  		content: '.';
+  		display: block;
+  		clear: both;
+  		height: 0;
+  		visibility:hidden;
+		} 
+		#img_list{
+  		margin: 0;
+  		padding: 0;
+  		position:absolute;
+  		width: 1830px;
+		} 
+		#img_list li{ 
+ 		float: left; 
+  		width: 610px; 
+  		height: 346px; 
+		}
+		.kid1{
+			position: relative;
+			left: 100px;
+			top: 150px;
+		}
+		.kid2{
+			position: relative;
+			left: 390px;
+			top: -33px;
+		}
+		.kid3{
+            position: relative;
+            left: 100px;
+            top: -30px;
+		}
+		.kid4{
+			position: relative;
+			left: 940px;
+			top: -195px;
+		}
+		.kid5{
+			position: relative;
+			width: 100px;
+			height: 85px;
+			cursor:pointer;
+			align-items: center;
+			justify-content: center;
+			display: -webkit-flex;
+			background-color: white;
+			border-style: solid;
+			border-color: grey;
+			left: 30px;
+			top: -180px;
+		}
+		.kid5:hover{
+			background-color: red;
+		}
+		.kid6:hover{
+			background-color: red;
+		}
+		.kid7:hover{
+			background-color: red;
+		}
+		.kid8:hover{
+			background-color: red;
+		}
+		.kid9:hover{
+			background-color: red;
+		}
+		.kid10:hover{
+			background-color: red;
+		}
+		.kid6{
+			position: relative;
+			width: 100px;
+			height: 85px;
+			align-items: center;
+			cursor:pointer;
+			justify-content: center;
+			display: -webkit-flex;
+			background-color: white;
+			border-style: solid;
+			border-color: #CDCDCD;
+			left: 130px;
+			top: -269px;
+		}
+		.kid7{
+			position: relative;
+			width: 100px;
+			height: 85px;
+			cursor:pointer;
+			align-items: center;
+			justify-content: center;
+			display: -webkit-flex;
+			background-color: white;
+			border-style: solid;
+			border-color: #CDCDCD;
+			left: 230px;
+			top: -358px;
+		}
+		.kid8{
+			position: relative;
+			width: 100px;
+			height: 85px;
+			cursor:pointer;
+			align-items: center;
+			justify-content: center;
+			display: -webkit-flex;
+			background-color: white;
+		    border-style: solid;
+			border-color: #CDCDCD;
+			left: 30px;
+			top: -360px;
+		}
+		.kid9{
+			position: relative;
+			width: 100px;
+			height: 85px;
+			cursor:pointer;
+			align-items: center;
+			justify-content: center;
+			display: -webkit-flex;
+			background-color: white;
+			border-style: solid;
+			border-color: #CDCDCD;
+			left: 130px;
+			top: -449px;
+		}
+		.kid10{
+			position: relative;
+			width: 100px;
+			height: 85px;
+			cursor:pointer;
+			align-items: center;
+			justify-content: center;
+			display: -webkit-flex;
+			background-color: white;
+			border-style: solid;
+			border-color: #CDCDCD;
+			left: 230px;
+			top: -538px;
+		}
+		.kid11{
+			position: relative;
+			width: 280px;
+			height: 170px;
+			border-style: solid;
+			border-color: #CDCDCD;
+			left: 345px;
+			top: -715px;
+			background-color: white;
+
+		}
+		.kid11a{
+			margin-top: 10px;
+			margin-left: 10px;
+			cursor:pointer;
+		}
+		.kid11a:hover{
+			color: red;
+		}
+		.kid11b{
+			margin-top: 25px;
+			margin-left: 5px;
+			cursor:pointer;
+		}
+        .kid11c{
+        	margin-left: 145px;
+        	margin-top: -85px;
+        	cursor:pointer;
+        }
+        .kid11d{
+        	margin-top: 7px;
+        	margin-left: 10px;
+        	font-size: 13px;
+        	cursor:pointer;
+        }
+        .kid11d:hover{
+        	color: red;
+        }
+        .kid11e{
+        	margin-top: -18px;
+        	margin-left: 150px;
+        	font-size: 13px;
+        	cursor: pointer;
+        }
+        .kid11e:hover{
+        	color: red;
+        }
+        .kid12{
+			position: relative;
+			width: 280px;
+			height: 170px;
+			border-style: solid;
+			border-color: #CDCDCD;
+			left: 640px;
+			top: -888px;
+			background-color: white;
+
+		}
+		.kid12a{
+			margin-top: 10px;
+			margin-left: 10px;
+			cursor:pointer;
+		}
+		.kid12a:hover{
+			color: red;
+		}
+		.kid12b{
+			margin-top: 25px;
+			margin-left: 5px;
+			cursor:pointer;
+		}
+        .kid12c{
+        	margin-left: 145px;
+        	margin-top: -85px;
+        	cursor:pointer;
+        }
+        .kid12d{
+        	margin-top: 7px;
+        	margin-left: 10px;
+        	font-size: 13px;
+        	cursor:pointer;
+        }
+        .kid12d:hover{
+        	color: red;
+        }
+        .kid12e{
+        	margin-top: -18px;
+        	margin-left: 150px;
+        	font-size: 13px;
+        	cursor: pointer;
+        }
+        .kid12e:hover{
+        	color: red;
+        }
+        .kid13{
+			position: relative;
+			width: 280px;
+			height: 170px;
+			border-style: solid;
+			border-color: #CDCDCD;
+			left: 935px;
+			top: -1062px;
+			background-color: white;
+
+		}
+		.kid13a{
+			margin-top: 10px;
+			margin-left: 10px;
+			cursor:pointer;
+		}
+		.kid13a:hover{
+			color: red;
+		}
+		ul li:hover{
+            color: red;
+		}
+		.kid14{
+			position: relative;
+			width: 1190px;
+			height: 30px;
+			border-style: solid;
+			border-color: #CDCDCD;
+			left: 30px;
+			top: -1030px;
+			background-color: white;
+			}
+		.kid14a{
+			margin-left: 10px;
+			margin-top: 5px;
+			color: red;
+			cursor: pointer;
+		}
+		.kid14a:hover{
+	        color: #CDCDCD;
+		}	
+		.kid14b{
+			margin-left: 100px;
+			margin-top: -22px;
+			color: #CDCDCD; 
+		}
+		.kid14c{
+			margin-left: 150px;
+			margin-top: -20px;
+			font-size: 13px;
+			color: #CDCDCD; 
+		}
+		.kid14d{
+			margin-left: 500px;
+			margin-top: -20px;
+			color: #CDCDCD; 
+			cursor: pointer;
+		}
+		.kid14e{
+			margin-left: 600px;
+			margin-top: -18px;
+			color: #CDCDCD; 
+			font-size: 13px;
+			cursor: pointer;
+		}
+
+    </style>
+</head>
+<body>
+    <div class="mother">
+      	<div class="child1">
+      		<img src="https://image.uisdc.com/wp-content/uploads/2018/02/uisdc-logo.png" height="50px">
+      	</div>
+      	<div class="child2">首页</div>
+      	<div class="child3"></div>
+      	<div class="child4">文章</div>
+      	<div class="child5c">
+      	    <h2 class="child5">网址导航</h2>
+      	    <dl class="child5a">
+                <dt class="child5b">设计导航</dt>
+                <dt class="child5b">图书导航</dt>
+                <dt class="child5b">电商导航</dt>
+                <dt class="child5b">色彩导航</dt>
+            </dl>
+            <h2 class="child7">优设读报</h2>
+            <dl class="child7a">
+            	<dt class="child7b">读报首页</dt>
+            	<dt class="child7b">行业新闻</dt>
+            	<dt class="child7b">头条文章</dt>
+            </dl>
+            <h2 class="child8">培训课程</h2>
+            <dl class="child8a">
+            	<dt class="child8b">优设大课堂</dt>
+                <dt class="child8b">设计公开课</dt>
+            </dl>
+            <h2 class="child9">UiiiUiii教程</h2>
+            <dl class="child9a">
+            	<dt class="child9b">学教程</dt>
+            	<dt class="child9b">找灵感</dt>
+            </dl>
+            <h2 class="child11">关于我们</h2>
+            <dl class="child11a">
+            	<dt class="child11b">文章投稿</dt>
+            	<dt class="child11b">广告商务</dt>
+            	<dt class="child11b">意见反馈</dt>
+            </dl>
+        </div>
+        <div class="child6">细节猎人</div>
+        <div class="child10">免费素材</div>
+    </div>
+    <div id="pic">
+      <ul id="img_list">
+        <li id="img1"></li>
+        <li id="img2"></li>
+        <li id="img3"></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+    // 轮播时间
+    var img_list = document.getElementById('img_list'); 
+    setInterval(function(){ 
+    img_list.appendChild(img_list.firstChild); 
+    },1000) 
+    // 
+    // easy-mock获取图片
+    var img1 = document.getElementById('img1');
+    var img2 = document.getElementById('img2');
+    var img3 = document.getElementById('img3');
+    var xml=new XMLHttpRequest();
+    xml.open("get","https://www.easy-mock.com/mock/5c6697b6d6c9fd10095e5091/example/query",true);
+    xml.send("");
+    xml.onreadystatechange=function() {
+      if (xml.readyState==4&&xml.status==200) {
+        var data = xml.responseText;
+        var person = JSON.parse(data);
+        img1.innerHTML = "<img src='"+person.img1+"'>";
+        img2.innerHTML = "<img src='"+person.img2+"'>";
+        img3.innerHTML = "<img src='"+person.img3+"'>";
+        }
+    }
+    </script>
+    <div class="kid1"><img src="https://image.uisdc.com/wp-content/uploads/2019/02/uisdc-bbanner-190227.jpg"width="280px"; height="180px"></div>
+    <div class="kid2"><img src="https://image.uisdc.com/wp-content/uploads/2019/02/uisdc-rb-0213c4d.jpg" width="280px"; height="180px"></div>
+    <div class="kid3"><img src="https://image.uisdc.com/wp-content/uploads/2019/02/uisdc-pr-rb0213.jpg" width="280px;" height="160px"></div>
+    <div class="kid4"><img src="https://image.uisdc.com/wp-content/uploads/2019/02/uisdc-pr-rb02132.jpg" width="280px"; height="160px"></div>
+    <div class="kid5">热门下载</div>
+    <div class="kid6">界面设计</div>
+    <div class="kid7">界面文章</div>
+    <div class="kid8">优设专题</div>
+    <div class="kid9">职场经验</div>
+    <div class="kid10">酷站推荐</div>
+    <div class="kid11">
+    	<div class="kid11a">热门专题</div>
+    	<div class="kid11b"><img src="https://image.uisdc.com/wp-content/uploads/2019/01/uisdc-lbbanner-190106.jpg" width="130px"; height="80px";></div>
+    	<div class="kid11c"><img src="https://image.uisdc.com/wp-content/uploads/2019/01/uisdc-brbanner2-1913.jpg" width="130px"; height="80px";></div>
+    	<div class="kid11d">高质量图库网站</div>
+    	<div class="kid11e">PS の 的日常技巧</div>
+    </div>
+    <div class="kid12">
+    	<div class="kid12a">设计灵感</div>
+    	<div class="kid12b"><img src="https://image.uisdc.com/wp-content/uploads/2018/11/uisdc-blbanner-181105.jpg" width="130px"; height="80px";></div>
+    	<div class="kid12c"><img src="https://image.uisdc.com/wp-content/uploads/2019/01/uisdc-rbbanner-1901032.jpg" width="130px"; height="80px";></div>
+    	<div class="kid12d">海报设计精选</div>
+    	<div class="kid12e">300篇设计技巧</div>
+    </div>
+    <div class="kid13">
+    	<div class="kid13a">课程推荐</div>
+    	<ul class="kid13b" style="cursor: pointer;">
+    		<li>超人气零基础手绘课程</li>
+    		<li>热门！零基础C4D课程</li>
+    		<li>名额有效！动效设计特训班</li>
+    		<li>名师！零基础UI设计课程</li>
+    	</ul>
+    </div>
+    <div class="kid14">
+    	<div class="kid14a">优设读报</div>
+    	<div class="kid14b">|</div>
+    	<div class="kid14c">1.中国艺术圈著名老炮被比利时艺术家指责抄袭30年</div>
+    	<div class="kid14d">|</div>
+    	<div class="kid14e">2. TIM v2.3.2 for Windows 正式版发布</div>
+    </div>
+
+
+</body>
+</html>
